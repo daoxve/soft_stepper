@@ -31,7 +31,7 @@ class _SoftStepperDemo extends State<SoftStepperDemo> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              SoftStepper(
+              SoftNumberedStepper(
                 numbers: const [
                   1,
                   2,

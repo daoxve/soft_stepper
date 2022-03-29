@@ -1,39 +1,19 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## About
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+Soft-stepper provides with extra customization features which Flutter's default stepper does not currently provide.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+## General Guidelines
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Simply import package:soft_stepper/soft_stepper.dart.
 
-## Features
+__Important:__ The direction argument controls whether the stepper is displayed horizontally or vertically. A horizontal IconStepper can be wrapped within a Column with no issues. However, if wrapped within a row, it must also be wrapped within the built-in Expanded widget. The same applies to the vertical IconStepper.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+__Validation:__ To enable validation before the next step is reached, set the steppingEnabled property to an appropriate value in a StatefulWidget.
 
-## Getting started
+__Controlling Steppers:__ All steppers are controlled using the activeStep property. You can control a stepper by:-
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+using the built-in next and previous buttons.
 
-## Usage
+## Credits
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Forked from the [im_stepper](https://pub.dev/packages/im_stepper) package.

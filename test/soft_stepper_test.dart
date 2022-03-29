@@ -4,7 +4,7 @@ import 'package:soft_stepper/soft_stepper.dart';
 
 void main() {
   group('Null/Exception checks', () {
-    const calculator = SoftStepper();
+    const calculator = SoftNumberedStepper();
     test('non-negative steps during first init', () {
       expect(calculator.activeStep, isNonNegative, reason: 'Must be a valid integer');
     });

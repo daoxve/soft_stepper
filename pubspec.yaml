@@ -1,6 +1,6 @@
 name: soft_stepper
 description: A customized flutter stepper.
-version: 1.0.0
+version: 0.0.1
 homepage: https://github.com/thecokerdavid/soft_stepper
 
 environment:

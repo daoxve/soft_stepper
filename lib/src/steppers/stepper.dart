@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'core/base_stepper.dart';
+import '../core/base_stepper.dart';
 
 /// A customized [stepper] that solves some of the limitations
 /// of the [Flutter]'s default stepper, developed for [Soft-Shop]'s needs
-class SoftStepper extends StatelessWidget {
+class SoftNumberedStepper extends StatelessWidget {
   /// Each number defines a step. Hence, total count of numbers determines the total number of steps.
   final List<int>? numbers;
 
@@ -81,7 +81,7 @@ class SoftStepper extends StatelessWidget {
   final AlignmentGeometry alignment;
 
   /// Creates a NumberStepper widget.
-  const SoftStepper({
+  const SoftNumberedStepper({
     Key? key,
     this.numbers,
     this.enableNextPreviousButtons = true,
